@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const {generateJWT} = require('../helpers/jwt');
 
 const signup = async (req, res = response ) => {
-    const {name, email, password} = req.body;
+    const {email, password} = req.body;
     try {
         let user = await User.findOne({email});
 
