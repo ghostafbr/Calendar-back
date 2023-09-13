@@ -33,7 +33,7 @@ const signup = async (req, res = response ) => {
             token
         });
     } catch (error) {
-        console.log(error);
+        console.error(error);
         res.status(500).json({
             ok: false,
             msg: 'Please contact the administrator',
@@ -76,7 +76,7 @@ const login = async (req, res = response ) => {
         });
 
     } catch (error) {
-        console.log(error);
+        console.error(error);
         res.status(500).json({
             ok: false,
             msg: 'Please contact the administrator',

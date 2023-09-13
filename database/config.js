@@ -8,7 +8,7 @@ const dbConnection = async() => {
         });
         console.log('DB Online');
     } catch (error) {
-        console.log(error);
+        console.error(error);
         throw new Error('Something went wrong connecting to the database');
     }
 }
